@@ -1,0 +1,153 @@
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title button {
+  position: absolute;
+  left: 20px;
+  background-image: url("../../images/arrow-left.svg");
+  width: 16px;
+  height: 27px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.title button:hover {
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 60px;
+  gap: 20px;
+}
+
+.item h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.item-description {
+  width: 220px;
+}
+
+.item-image {
+  width: 318px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#shirtContainer {
+  display: flex;
+  gap: 10px 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #64008a;
+  color: #fff;
+  width: 100%;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  margin-top: -30px;
+  height: 34px;
+}
+
+.btn-container button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-container button:hover {
+  cursor: pointer;
+}
+
+.login-modal {
+  height: 340px;
+  width: 620px;
+  position: absolute;
+  border-radius: 1em;
+  background-color: #fff;
+  z-index: 2;
+  padding: 40px 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.all-filled {
+  background-color: #64008a;
+}
+
+form input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #b180c4;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:disabled {
+  background-color: #b180c4;
+  color: #fff;
+  cursor: not-allowed;
+}
+/* 
+form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #4d0073;
+} */
+
+.login-modal button {
+  border: none;
+  background-color: transparent;
+  color: #64008a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.login-modal button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "nome": "Camiseta roxa",
+      "preco": 50.0,
+      "imagem": "../images/camisetaRoxa.png"
+    },
+    {
+      "id": 2,
+      "nome": "Camiseta branca",
+      "preco": 30.0,
+      "imagem": "../images/camisetaBranca.png"
+    },
+    {
+      "id": 3,
+      "nome": "Camiseta preta imagotipo branco e verde",
+      "preco": 40.0,
+      "imagem": "../images/camisetaPretaLogoVerdeBranco.png"
+    },
+    {
+      "id": 4,
+      "nome": "Camiseta preta listras",
+      "preco": 60.0,
+      "imagem": "../images/camisetaPretaListras.png"
+    },
+    {
+      "id": 5,
+      "nome": "Camiseta preta imagotipo verde",
+      "preco": 60.0,
+      "imagem": "../images/camisetaPretaLogoVerde.png"
+    },
+    {
+      "id": 6,
+      "nome": "Camiseta preta imagotipo branco",
+      "preco": 60.0,
+      "imagem": "../images/camisetaPretaLogoBranco.png"
+    }
+  ]
+}
