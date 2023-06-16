@@ -4,6 +4,10 @@ const items = loja.items;
 
 const containerCamisetas = document.getElementById("shirt-container");
 
+const buttonLogin = document.getElementById("login-btn");
+
+const overlay = document.getElementById("overlay");
+
 items.forEach((item) => {
   const div = document.createElement("div");
   div.classList.add("item");
@@ -43,4 +47,28 @@ buttons.forEach((button) => {
       count.textContent = value - 1;
     }
   });
+});
+
+function showLoginModal() {
+  const loginModal = document.getElementById("login-modal");
+  const overlay = document.getElementById("overlay");
+  loginModal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+
+function hideLoginModal() {
+  const loginModal = document.getElementById("login-modal");
+  const overlay = document.getElementById("overlay");
+  loginModal.classList.add("hidden");
+  overlay.classList.add("hidden");
+}
+
+buttonLogin.addEventListener("click", (event) => {
+  // retira o comportamento padrão do a
+  event.preventDefault();
+  showLoginModal();
+});
+
+overlay.addEventListener("click", () => {
+  hideLoginModal();
 });
